@@ -79,6 +79,10 @@
     transform: rotate(180deg);
 }
 
+.slideIn-left, .slideIn-right, .pop {
+    visibility: visible;
+}
+
 .slideIn-left {
     animation: slideInLeft 0.7s;
 }
@@ -89,6 +93,10 @@
 
 .pop {
     animation: pop 0.7s;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 @keyframes slideInLeft {
