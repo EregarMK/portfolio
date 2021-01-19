@@ -22,10 +22,11 @@ const Itembox = ({company, description, image, label, link, project, stack, task
         <a href={link} target='_blank' rel='noreferrer' className='itembox-wrapper'>
             <img className='itembox-image' src={url} alt={project} />
             <h2 className='itembox-title'>{project}</h2>
-            <div></div>
-            <p>{description}</p>
-            Stack: {stack}
-            {tasks}
+            <p className='itembox-content'>
+                {description}
+                {tasks}
+                <span className='itembox-footer'><b>Stack:</b> {stack}</span>
+            </p>
         </a>
     )
 }
