@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[8],{22:function(o,t,p){"use strict";p.r(t),t.default=p.p+"static/media/miforbet-mockup.1f4958cc.jpg"}}]);
+//# sourceMappingURL=8.2ef6919a.chunk.js.map

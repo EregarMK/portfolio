@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[6],{20:function(t,o,p){"use strict";p.r(o),o.default=p.p+"static/media/estato-mockup.d0f19be7.jpg"}}]);
+//# sourceMappingURL=6.e4718e61.chunk.js.map
