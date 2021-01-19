@@ -8,7 +8,7 @@ const Timeline = () => {
     return (
         <div className='timeline-wrapper'>
             {date.map((item, index) => {
-                return (<TimelineItem key={item.project} right={!!(index%2)}>
+                return (<TimelineItem key={item.project} right={!!(index%2)} label={`${item.company}, ${item.label}`}>
                     <Itembox {...item}/>
                 </TimelineItem>)
             })}

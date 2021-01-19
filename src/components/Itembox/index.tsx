@@ -9,7 +9,7 @@ type ProjectProps = {
    link: string,
    project: string,
    stack: string,
-   tasks: [] 
+   tasks: string[] 
 }
 
 const getImageURL = (image:string, callback: Function) => import(`../../assets/images/${image.toLowerCase()}-mockup.jpg`).then(image => callback(image.default))
@@ -19,16 +19,14 @@ const Itembox = ({company, description, image, label, link, project, stack, task
     useEffect(() => {getImageURL(image, updateURL)}, [image])
     
     return (
-        <div>
+        <a href={link} target='_blank' rel='noreferrer' className='itembox-wrapper'>
             <img className='itembox-image' src={url} alt={project} />
-            <h2>{project}</h2>
-            {company}
+            <h2 className='itembox-title'>{project}</h2>
+            <div></div>
             <p>{description}</p>
-            {stack}
+            Stack: {stack}
             {tasks}
-            <a href={link} target='_blank' rel='noreferrer'>link</a>
-            {label}
-        </div>
+        </a>
     )
 }
 

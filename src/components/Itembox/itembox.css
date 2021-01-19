@@ -1,3 +1,15 @@
+.itembox-wrapper {
+    position: relative;
+    display: block;
+    color: #000;
+}
+
 .itembox-image {
     width: 100%;
+}
+
+.itembox-title {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--timeline-line-bg);
 }

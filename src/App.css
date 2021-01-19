@@ -3,14 +3,17 @@
 
 :root {
   --theme-color: #86BBD8;
+  --font-size: 14px;
   --footer-bg: #0A181F;
   --footer-color: #fff;
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   background-color: var(--theme-color);
   overflow-x: hidden;
+  font-size: var(--font-size);
 }
 
 a {
@@ -21,7 +24,7 @@ a {
   text-align: center;
   color: var(--footer-color);
   background-color: var(--footer-bg);
-  padding: var(--spacing);
+  padding: calc(var(--spacing-top) / 2);
 }
 
 .footer a {
@@ -33,7 +36,7 @@ a {
 }
 
 .icon + .icon {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .icon:hover {

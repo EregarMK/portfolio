@@ -1,28 +1,18 @@
 const createIT = {
         company: 'CreateIT',
         description: 'Creating HTML web page patterns according to designs, email templates and projects for individual clients.',
-        tasks: [
-            'web pages, newsletters and emails for our individual clients',
-            'themes, plugins for themeforest.net',
-            'debugging and testing websites on different browsers and platforms',
-            'responsive sites for Android, iOS'
-        ],
+        tasks: [],
         stack: 'HTML5, CSS3, Bootstrap, Javascript(with jQuery), Ajax, Sass, Less, Pug(Jade)',
         label: '2014-2016'
 }
 
 const  data = [
     {
-        company: 'forBet Zakłady Bukmacherskie',
+        company: 'forBet',
         description: 'Creating new mobile version(m.iforbet.pl) of core page. We used React and Node as our base with server side rendering. In the process of making we added support for Progressive Web App.',
-        tasks: [
-            'taking care mostly over client side',
-            'adding features according to prepared designs',
-            'solving problems during development',
-            'code review'
-        ],
+        tasks: [],
         stack: 'React, Redux, Express, Webpack, Node',
-        project: 'Mobile version of m.iforbet.pl',
+        project: 'm.iforbet.pl',
         image: 'miforbet',
         label: '2018-2020',
         link: 'https://m.iforbet.pl/'

@@ -1,18 +1,19 @@
 :root {
     --timeline-line-size: 4px;
-    --spacing: 20px;
+    --spacing-top: 40px;
+    --spacing-side: 12px;
     --timeline-line-bg: #65A9CD;
 }
 
 .timeline-wrapper {
     position: relative;
-    padding: var(--spacing);
+    padding: var(--spacing-top) var(--spacing-side);
     margin: 0 auto;
     max-width: 1000px;
 }
 
 .timeline-wrapper > div + div {
-    margin-top: calc(var(--spacing) * 2);
+    margin-top: calc(var(--spacing-top) * 2);
 }
 
 .timeline-wrapper:before {
