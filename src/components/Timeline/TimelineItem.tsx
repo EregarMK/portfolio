@@ -11,7 +11,7 @@ type TimelineItemProps = {
 const TimelineItem = ({right, children, label}: TimelineItemProps) => {
     const [isAnimated, onAnimation] = useState(false)
     const isMobile = window.innerWidth < 768
-    console.log( right, isMobile)
+    
     return (
         <InView onChange={(inView, entry) => onAnimation(inView)}>
             <div className={`timeline-item-wrapper timeline-item-wrapper-${(right || isMobile) ? 'right' : ''}`}>

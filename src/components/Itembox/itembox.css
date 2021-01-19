@@ -1,7 +1,8 @@
 .itembox-wrapper {
+    padding: 12px;
     position: relative;
     display: block;
-    color: #000;
+    overflow: hidden;
 }
 
 .itembox-image {
@@ -14,6 +15,10 @@
     color: var(--timeline-line-bg);
 }
 
+.itembox-content-wrapper {
+    color: var(--footer-bg);
+}
+
 .itembox-content {
     margin: 10px 0;
 }
@@ -22,4 +27,27 @@
     display: block;
     font-size: 12px;
     margin-top: 10px;
+}
+
+.itembox-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 500px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    opacity: 0.9;
+    background-color: black;
+    transition: left .3s;
+    z-index: 1000;
+    color: #fff;
+    border-radius: var(--border-radius);
+    font-size: 20px
+}
+
+.itembox-wrapper:hover .itembox-overlay {
+    left: 0;
 }

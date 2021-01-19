@@ -18,7 +18,7 @@
     box-shadow: var(--default-shadow);
     border-radius: var(--border-radius);
     background-color: var(--timeline-item-bg);
-    padding: 12px;
+    transition: all .5s;
 }
 
 .timeline-item-arrow {
@@ -66,7 +66,7 @@
     text-align: center;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     box-shadow: var(--default-shadow);
-    padding: 5px
+    padding: 5px;
 }
 
 .timeline-item-wrapper-right .timeline-item-content{

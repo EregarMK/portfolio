@@ -16,18 +16,22 @@ const getImageURL = (image:string, callback: Function) => import(`../../assets/i
 
 const Itembox = ({company, description, image, label, link, project, stack, tasks}: ProjectProps) => {
     const [url, updateURL] = useState('')
+    const isDesktop = window.innerWidth > 1201
     useEffect(() => {getImageURL(image, updateURL)}, [image])
-    
+
     return (
-        <a href={link} target='_blank' rel='noreferrer' className='itembox-wrapper'>
-            <img className='itembox-image' src={url} alt={project} />
-            <h2 className='itembox-title'>{project}</h2>
-            <p className='itembox-content'>
-                {description}
-                {tasks}
-                <span className='itembox-footer'><b>Stack:</b> {stack}</span>
-            </p>
-        </a>
+        <div className='itembox-wrapper'>
+            <a href={link} target='_blank' rel='noreferrer' className='itembox-content-wrapper'>
+                <img className='itembox-image' src={url} alt={project} />
+                <h2 className='itembox-title'>{project}</h2>
+                <p className='itembox-content'>
+                    {description}
+                    {tasks}
+                    <span className='itembox-footer'><b>Stack:</b> {stack}</span>
+                </p>
+            </a>
+            {isDesktop && <a href={link} target='_blank' rel='noreferrer' className='itembox-overlay'>demo</a>}
+        </div>
     )
 }
 
