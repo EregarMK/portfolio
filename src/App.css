@@ -1,38 +1,46 @@
-.App {
+@import-normalize;
+@import './assets/fonts/icons/fontello.css';
+
+:root {
+  --theme-color: #86BBD8;
+  --footer-bg: #0A181F;
+  --footer-color: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--theme-color);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
   text-align: center;
+  color: var(--footer-color);
+  background-color: var(--footer-bg);
+  padding: var(--spacing);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer a {
+  color: var(--footer-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  transition: opacity .5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon + .icon {
+  margin-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon:hover {
+  opacity: .5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-socials {
+  display: inline-block;
+  margin-left: 30px;
 }

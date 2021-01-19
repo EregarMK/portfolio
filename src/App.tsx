@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Timeline from './components/Timeline';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Timeline />
+      <footer className='footer'>
+        &copy;2021 Michał Kościanek
+        <div className='footer-socials'>
+          <a href='https://www.linkedin.com/in/micha%C5%82-ko%C5%9Bcianek-825661a2/' className='icon-linkedin icon' target='_blank' rel="noreferrer"> </a>
+          <a href='https://github.com/EregarMK' className='icon-github icon' target='_blank' rel="noreferrer"> </a>
+        </div>
+      </footer>
     </div>
   );
 }
