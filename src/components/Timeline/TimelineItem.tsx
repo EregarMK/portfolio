@@ -10,11 +10,13 @@ type TimelineItemProps = {
 
 const TimelineItem = ({right, children, label}: TimelineItemProps) => {
     const [isAnimated, onAnimation] = useState(false)
+    const isMobile = window.innerWidth < 768
+    console.log( right, isMobile)
     return (
         <InView onChange={(inView, entry) => onAnimation(inView)}>
-            <div className={`timeline-item-wrapper timeline-item-wrapper-${right ? 'right' : ''}`}>
+            <div className={`timeline-item-wrapper timeline-item-wrapper-${(right || isMobile) ? 'right' : ''}`}>
                 <div className={`timeline-item-icon icon-suitcase ${isAnimated ? 'pop' : ''}`}></div>
-                <div className={`timeline-item-content ${isAnimated ? `slideIn-${right ? 'right' : 'left'}` : ''}`}>
+                <div className={`timeline-item-content ${isAnimated ? `slideIn-${(right || isMobile) ? 'right' : 'left'}` : ''}`}>
                     {children}
                     <div className='timeline-label-wrapper'><div className='timeline-label-content'>{label}</div></div>
                     <div className='timeline-item-arrow' />

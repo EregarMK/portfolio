@@ -14,8 +14,7 @@
 
 .timeline-item-content {
     position: relative;
-    min-height: 160px;
-    width: 40%;
+    width: 75%;
     box-shadow: var(--default-shadow);
     border-radius: var(--border-radius);
     background-color: var(--timeline-item-bg);
@@ -24,7 +23,7 @@
 
 .timeline-item-arrow {
     position: absolute;
-    top: calc(var(--timeline-icon-size) / 2 - var(--triangle-border-size) / 2);
+    top: calc(var(--timeline-icon-size) / 2 - var(--triangle-border-size));
     left: 100%;
     width: 0;
     height: 0;
@@ -40,11 +39,10 @@
     justify-content: center;
     color: var(--timeline-line-bg);
     position: absolute;
-    left: 50%;
+    left: calc(var(--timeline-icon-border-size) / 2);
     top: 0;
-    margin-left: calc(var(--timeline-icon-size) / -2);
-    width: calc(var(--timeline-icon-size) - var(--timeline-icon-border-size) * 2);
-    height: calc(var(--timeline-icon-size) - var(--timeline-icon-border-size) * 2);
+    width: var(--timeline-icon-size);
+    height: var(--timeline-icon-size);
     background-color: var(--timeline-icon-bg);
     border: var(--timeline-icon-border-size) solid var(--timeline-line-bg);
     border-radius: 100%;
@@ -64,7 +62,7 @@
 .timeline-label-content {
     color: #fff;
     background-color: var(--timeline-line-bg);
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     box-shadow: var(--default-shadow);
@@ -124,5 +122,20 @@
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline-item-icon {
+        left: 50%;
+        margin-left: calc(var(--timeline-icon-size) / -2);
+    }
+
+    .timeline-item-content {
+        width: 44%;
+    }
+
+    .timeline-label-content {
+        width: 50%;
     }
 }

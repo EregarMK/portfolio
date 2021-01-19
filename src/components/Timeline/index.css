@@ -7,7 +7,7 @@
 
 .timeline-wrapper {
     position: relative;
-    padding: var(--spacing-top) var(--spacing-side);
+    padding: var(--spacing-top) var(--spacing-side) calc(var(--spacing-top) + 26px);
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -22,6 +22,12 @@
     width: var(--timeline-line-size);
     top: 0;
     bottom: 0;
-    left: calc(50% - var(--timeline-line-size) / 2);
+    left: calc(var(--timeline-icon-size) / 2 + var(--spacing-side));
     background-color: var(--timeline-line-bg);
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline-wrapper:before {
+        left: calc(50% - var(--timeline-line-size) / 2);
+    }
 }

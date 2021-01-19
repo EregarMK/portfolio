@@ -11,7 +11,7 @@ const  data = [
         company: 'forBet',
         description: 'Creating new mobile version(m.iforbet.pl) of core page. We used React and Node as our base with server side rendering. In the process of making we added support for Progressive Web App.',
         tasks: [],
-        stack: 'React, Redux, Express, Webpack, Node',
+        stack: 'React, Redux, Express, Webpack, Node, PWA, SSR',
         project: 'm.iforbet.pl',
         image: 'miforbet',
         label: '2018-2020',
