@@ -1,1 +1,1 @@
-Portfolio powered by CRA, demo: [portfolio]('').
+Portfolio powered by CRA, demo: [portfolio]('https://eregarmk.github.io/portfolio').
