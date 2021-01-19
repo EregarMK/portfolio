@@ -1,0 +1,26 @@
+:root {
+    --timeline-line-size: 4px;
+    --spacing: 20px;
+    --timeline-line-bg: #65A9CD;
+}
+
+.timeline-wrapper {
+    position: relative;
+    padding: var(--spacing);
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.timeline-wrapper > div + div {
+    margin-top: calc(var(--spacing) * 2);
+}
+
+.timeline-wrapper:before {
+    position: absolute;
+    content: '';
+    width: var(--timeline-line-size);
+    top: 0;
+    bottom: 0;
+    left: calc(50% - var(--timeline-line-size) / 2);
+    background-color: var(--timeline-line-bg);
+}

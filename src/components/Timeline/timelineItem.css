@@ -1,0 +1,104 @@
+:root {
+    --default-shadow: 0 2px 8px -2px rgba(82, 82, 82, 0.4);
+    --border-radius: 4px;
+    --triangle-border-size: 6px;
+    --timeline-item-bg: #fff;
+    --timeline-icon-bg: var(--timeline-item-bg);
+    --timeline-icon-size: 60px;
+    --timeline-icon-border-size: 4px;
+}
+
+.timeline-item-wrapper {
+    position: relative;
+}
+
+.timeline-item-content {
+    position: relative;
+    min-height: 160px;
+    width: 40%;
+    box-shadow: var(--default-shadow);
+    border-radius: var(--border-radius);
+    background-color: var(--timeline-item-bg);
+    padding: 12px;
+}
+
+.timeline-item-arrow {
+    position: absolute;
+    top: calc(var(--timeline-icon-size) / 2 - var(--triangle-border-size) / 2);
+    left: 100%;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: var(--triangle-border-size);
+    border-top-width: var(--triangle-border-size);
+    border-left: var(--triangle-border-size) solid var(--timeline-item-bg);
+}
+
+.timeline-item-icon {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -30px;
+    width: calc(var(--timeline-icon-size) - var(--timeline-icon-border-size) * 2);
+    height: calc(var(--timeline-icon-size) - var(--timeline-icon-border-size) * 2);
+    background-color: var(--timeline-icon-bg);
+    border: var(--timeline-icon-border-size) solid var(--timeline-line-bg);
+    border-radius: 100%;
+    box-shadow: var(--default-shadow);
+}
+
+.timeline-item-wrapper-right .timeline-item-content{
+    margin-left: auto;
+}
+
+.timeline-item-wrapper-right .timeline-item-arrow{
+    right: 100%;
+    left: auto;
+    transform: rotate(180deg);
+}
+
+.slideIn-left {
+    animation: slideInLeft 0.7s;
+}
+
+.slideIn-right {
+    animation: slideInRight 0.7s;
+}
+
+.pop {
+    animation: pop 0.7s;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pop {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
