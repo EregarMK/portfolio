@@ -14,7 +14,7 @@ const  data = [
         stack: 'React, Redux, Express, Webpack, Node, PWA, SSR',
         project: 'm.iforbet.pl',
         image: 'miforbet',
-        label: '2018-2020',
+        label: '2018-2021',
         link: 'https://m.iforbet.pl/'
     },
     {
