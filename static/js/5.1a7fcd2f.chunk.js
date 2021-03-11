@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[5],{19:function(p,t,o){"use strict";o.r(t),t.default=o.p+"static/media/disrupt-mockup.d411fcc6.jpg"}}]);
-//# sourceMappingURL=5.1a7fcd2f.chunk.js.map
