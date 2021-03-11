@@ -6,7 +6,28 @@ const createIT = {
         label: '2014-2016'
 }
 
-const  data = [
+export type ProjectProps = {
+    company: string,
+    description: string,
+    image: string,
+    label: string,
+    link: string,
+    project: string,
+    stack: string,
+    tasks: string[] 
+}
+
+export const  data = [
+    {
+        company: '',
+        description: '',
+        tasks: [],
+        stack: 'React, Redux, Express, Webpack, Node, SSR, Jest',
+        project: 'Mysterious project ...',
+        image: '',
+        label: '2021-now',
+        link: ''
+    },
     {
         company: 'forBet',
         description: 'Creating new mobile version(m.iforbet.pl) of core page. We used React and Node as our base with server side rendering. In the process of making we added support for Progressive Web App.',
@@ -70,5 +91,3 @@ const  data = [
         link: 'http://preview.themeforest.net/item/you-personal-html-template/full_screen_preview/10349875'
     },
 ]
-
-export default data

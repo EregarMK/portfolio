@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import Timeline from './components/Timeline';
+import { data } from './assets/data';
 
 function App() {
   return (
     <div className="App">
-      <Timeline />
+      <Timeline data={data}/>
       <footer className='footer'>
         &copy;2021 Michał Kościanek
         <div className='footer-socials'>
