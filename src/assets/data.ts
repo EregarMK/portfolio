@@ -23,7 +23,7 @@ export const data: Project[] = [
   {
     company: '',
     description: '',
-    stack: 'React, Redux, Express, Webpack, Node, SSR, Jest',
+    stack: 'React, Python, Discord.py, Vite, Jest, AWS, d3.js',
     project: 'Mysterious project ...',
     imageName: 'default',
     label: '2025-now',
