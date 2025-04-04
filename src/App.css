@@ -1,10 +1,11 @@
-@import "./assets/fonts/icons/fontello.css";
+@import './assets/fonts/icons/fontello.css';
 
 :root {
   --theme-color: #86bbd8;
   --font-size: 14px;
   --footer-bg: #0a181f;
   --footer-color: #fff;
+  --padding-sm: 12px;
 }
 
 *,
@@ -19,7 +20,7 @@ body {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   background-color: var(--theme-color);
   font-size: var(--font-size);
@@ -55,4 +56,8 @@ a {
 .footer-socials {
   display: inline-block;
   margin-left: 30px;
+}
+
+ul {
+  padding-left: calc(var(--padding-sm) + 4px);
 }

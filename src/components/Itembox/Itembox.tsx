@@ -48,7 +48,13 @@ const Itembox = ({
         <h2 className="itembox-title">{project}</h2>
         <p className="itembox-content">
           {description}
-          {tasks}
+          {tasks && (
+            <ul>
+              {tasks.map((task, index) => (
+                <li key={`${project}-${index}`}>{task}</li>
+              ))}
+            </ul>
+          )}
           <span className="itembox-footer">
             <b>Stack:</b> {stack}
           </span>

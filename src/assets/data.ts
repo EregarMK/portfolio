@@ -16,25 +16,41 @@ export interface Project {
   link: string;
   project: string;
   stack: string;
-  tasks: string[];
+  tasks?: string[];
 }
 
 export const data: Project[] = [
   {
     company: '',
     description: '',
-    tasks: [],
     stack: 'React, Redux, Express, Webpack, Node, SSR, Jest',
     project: 'Mysterious project ...',
     imageName: 'default',
-    label: '2021-now',
+    label: '2025-now',
     link: '',
+  },
+  {
+    company: 'Software Mind / ValueLogic',
+    description:
+      'As senior/lead front end developer I had an opportunity to work with clients from Germany/Finland in different fields eg. real estate, ecommerce, HR. My main taskts included: ',
+    stack:
+      'React, Vue, Storybook, Vite, Webpack, Storyblok, Node, Jest, .Net, Azure, AWS, microfrontends',
+    project: 'Software Mind / ValueLogic',
+    imageName: 'softwaremind',
+    label: '2021-2024',
+    link: 'https://softwaremind.com/',
+    tasks: [
+      'creating web applications over full lifecycle(architecture, techstack, delivery)',
+      'implementing modules according to specification',
+      'creating reusable npm packages for internal projects',
+      'solving ongoing development problems',
+      'mentoring and helping other developers',
+    ],
   },
   {
     company: 'forBet',
     description:
       'Creating new mobile version(m.iforbet.pl) of core page. We used React and Node as our base with server side rendering. In the process of making we added support for Progressive Web App.',
-    tasks: [],
     stack: 'React, Redux, Express, Webpack, Node, PWA, SSR',
     project: 'm.iforbet.pl',
     imageName: 'miforbet',
@@ -45,7 +61,6 @@ export const data: Project[] = [
     company: 'SoftwarePlant',
     description:
       'Creating new features and fixing bugs in SoftwarePlant core aplications for Jira (BigPicture, BigGantt). I had opportunity to work in Jira both environments(server & cloud).',
-    tasks: [],
     stack:
       'Angular 4/5, ES6, RXJS, TypeScript, Karma, Webpack, Jira, PCSS, Maven',
     project: 'BigPicture, BigGantt',
