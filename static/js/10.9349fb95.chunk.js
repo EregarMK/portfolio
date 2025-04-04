@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[10],{24:function(o,p,t){"use strict";t.r(p),p.default=t.p+"static/media/sella-mockup.e7face8c.jpg"}}]);
-//# sourceMappingURL=10.9349fb95.chunk.js.map

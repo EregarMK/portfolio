@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[11],{25:function(o,t,p){"use strict";p.r(t),t.default=p.p+"static/media/tours-mockup.df037d9c.jpg"}}]);
-//# sourceMappingURL=11.cc2b1fdd.chunk.js.map

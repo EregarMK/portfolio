@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[13],{27:function(o,p,t){"use strict";t.r(p),p.default=t.p+"static/media/you-mockup.68b2a816.jpg"}}]);
-//# sourceMappingURL=13.d3070592.chunk.js.map

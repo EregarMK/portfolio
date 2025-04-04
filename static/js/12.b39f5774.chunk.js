@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[12],{26:function(o,p,t){"use strict";t.r(p),p.default=t.p+"static/media/uacademy-mockup.7cb9d854.jpg"}}]);
-//# sourceMappingURL=12.b39f5774.chunk.js.map
