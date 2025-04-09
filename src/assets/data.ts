@@ -23,7 +23,8 @@ export const data: Project[] = [
   {
     company: '',
     description: '',
-    stack: 'React, Python, Discord.py, Vite, Jest, AWS, d3.js',
+    stack:
+      'React, Typescript, Storybook, Zustand, Tailwind, Vite, Jest, Node, Python, Discord.py, AWS, d3.js',
     project: 'Mysterious project ...',
     imageName: 'default',
     label: '2025-now',
@@ -32,19 +33,19 @@ export const data: Project[] = [
   {
     company: 'Software Mind / ValueLogic',
     description:
-      'As senior/lead front end developer I had an opportunity to work with clients from Germany/Finland in different fields eg. real estate, ecommerce, HR. My main taskts included: ',
+      'As senior/lead front end developer I had an opportunity to work with clients from Germany/Finland in different fields eg. real estate, e-commerce, HR. My main taskts included: ',
     stack:
-      'React, Vue, Storybook, Vite, Webpack, Storyblok, Node, Jest, .Net, Azure, AWS, microfrontends',
+      'React, Typescript, TanStack Query, Vue, Storybook, Storyblok + Next.js, Tailwind, Vite, Webpack, Node, Jest, Docker, microfrontends, Azure, AWS(s3 + Amplify), .Net.',
     project: 'Software Mind / ValueLogic',
     imageName: 'softwaremind',
     label: '2021-2024',
     link: 'https://softwaremind.com/',
     tasks: [
-      'creating web applications over full lifecycle(architecture, techstack, delivery)',
+      'creating applications across the full scope(architecture, prototyping, implementation, development/maintenance)',
       'implementing modules according to specification',
       'creating reusable npm packages for internal projects',
       'solving ongoing development problems',
-      'mentoring and helping other developers',
+      'management, mentoring and helping other developers',
     ],
   },
   {
